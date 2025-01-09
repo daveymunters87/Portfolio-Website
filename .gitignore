@@ -1,0 +1,27 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and editor-specific
+.vscode/
+.idea/
+
+# Build output
+dist/
+build/
+*.js.map
+*.css.map
+
+# Tailwind CSS and PostCSS (if applicable)
+*.css.map

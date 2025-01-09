@@ -7,7 +7,7 @@
   <title>Portfolio | Davey</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
+  <script defer src="../src/js/main.js"></script>
 </head>
 
 <body>
@@ -56,7 +56,7 @@
             </div>
             <h1 class="text-6xl md:text-7xl font-bold">
               Hi, I'm
-              <span class="block mt-2 text-primary font-banner text-8xl">
+              <span id="animated-text" class="block mt-2 text-primary font-banner text-8xl">
                 Davey
               </span>
             </h1>
@@ -149,7 +149,7 @@
                   <span class="text-white">,</span>
                 </div>
                 <div class="pl-8">
-                  <span class="text-yellow-400">'Node.js'</span>
+                  <span class="text-yellow-400">'Vue.js'</span>
                 </div>
                 <div class="pl-4">
                   <span class="text-white">],</span>
@@ -157,7 +157,7 @@
                 <div class="pl-4">
                   <span class="text-pink-400">experience</span>
                   <span class="text-white">:</span> 
-                  <span class="text-green-400">'5+ years'</span>
+                  <span class="text-green-400">'3+ years'</span>
                 </div>
                 <div>
                   <span class="text-white">}</span>
@@ -277,6 +277,78 @@
               </div>
             </div>
           </div>
+
+          <!-- Project 1 -->
+          <div class="group relative overflow-hidden rounded-2xl shadow-xl">
+            <img src="https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&w=800&h=500"
+              alt="E-Commerce Platform" class="w-full h-[300px] object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent
+                     p-8 flex flex-col justify-end transform translate-y-8
+                     group-hover:translate-y-0 transition-transform">
+              <h3 class="text-2xl font-bold text-white mb-2">E-Commerce Platform</h3>
+              <p class="text-gray-200 mb-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                A full-stack e-commerce solution with real-time inventory management
+                and secure payment processing.
+              </p>
+              <div class="flex gap-2 mb-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                <span class="bg-indigo-500/20 text-white px-3 py-1 rounded-full text-sm">
+                  React
+                </span>
+                <span class="bg-indigo-500/20 text-white px-3 py-1 rounded-full text-sm">
+                  Node.js
+                </span>
+                <span class="bg-indigo-500/20 text-white px-3 py-1 rounded-full text-sm">
+                  MongoDB
+                </span>
+              </div>
+              <div class="flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                <a href="#" class="text-white hover:text-indigo-500 flex items-center gap-1">
+                  <!-- <svg ...> [icon] </svg> -->
+                  Live Demo
+                </a>
+                <a href="#" class="text-white hover:text-indigo-500 flex items-center gap-1">
+                  <!-- <svg ...> [icon] </svg> -->
+                  Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="group relative overflow-hidden rounded-2xl shadow-xl">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&h=500"
+              alt="Task Management App" class="w-full h-[300px] object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent
+                     p-8 flex flex-col justify-end transform translate-y-8
+                     group-hover:translate-y-0 transition-transform">
+              <h3 class="text-2xl font-bold text-white mb-2">Task Management App</h3>
+              <p class="text-gray-200 mb-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                A collaborative task management tool with real-time updates
+                and team collaboration features.
+              </p>
+              <div class="flex gap-2 mb-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                <span class="bg-indigo-500/20 text-white px-3 py-1 rounded-full text-sm">
+                  Vue.js
+                </span>
+                <span class="bg-indigo-500/20 text-white px-3 py-1 rounded-full text-sm">
+                  Firebase
+                </span>
+                <span class="bg-indigo-500/20 text-white px-3 py-1 rounded-full text-sm">
+                  Tailwind
+                </span>
+              </div>
+              <div class="flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                <a href="#" class="text-white hover:text-indigo-500 flex items-center gap-1">
+                  <!-- <svg ...> [icon] </svg> -->
+                  Live Demo
+                </a>
+                <a href="#" class="text-white hover:text-indigo-500 flex items-center gap-1">
+                  <!-- <svg ...> [icon] </svg> -->
+                  Source
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -295,51 +367,42 @@
                 Contact Information
               </h3>
               <div class="space-y-6">
-                <a href="mailto:daveymunters87@gmail.com"
-                  class="flex items-center gap-3 text-gray-600 hover:text-primary">
-                  <div class="bg-indigo-500/10 p-3 rounded-full">
-                    <!-- <svg ...> [icon] </svg> -->
-                  </div>
-                  <span>your.email@example.com</span>
-                </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
-                  class="flex items-center gap-3 text-gray-600 hover:text-primary">
+                <a href="https://github.com/daveymunters87" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-gray-600 hover:text-primary">
                   <div class="bg-indigo-500/10 p-3 rounded-full">
                     <!-- <svg ...> [icon] </svg> -->
                   </div>
                   <span>GitHub Profile</span>
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-                  class="flex items-center gap-3 text-gray-600 hover:text-primary">
+                <a href="https://www.linkedin.com/in/davey-munters-590921236/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-gray-600 hover:text-primary">
                   <div class="bg-indigo-500/10 p-3 rounded-full">
                     <!-- <svg ...> [icon] </svg> -->
                   </div>
                   <span>LinkedIn Profile</span>
-                </a>
+                </a>                
               </div>
             </div>
 
             <!-- Contact Form -->
-            <form class="space-y-6">
+            <form class="space-y-6" action="/send-email" method="post">
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
                   Name
                 </label>
-                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-200
+                <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-200
                          focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Your name" />
               </div>
               <div>
                 <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
                   Email
                 </label>
-                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-200
+                <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-200
                          focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="your.email@example.com" />
               </div>
               <div>
                 <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
                   Message
                 </label>
-                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200
+                <textarea id="message" rows="4" name="message" class="w-full px-4 py-3 rounded-lg border border-gray-200
                          focus:primary focus:ring-1 focus:outline-none focus:ring-primary" placeholder="Your message"></textarea>
               </div>
               <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg
@@ -361,5 +424,4 @@
     </footer>
   </div>
 </body>
-
 </html>
