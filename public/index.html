@@ -7,37 +7,39 @@
   <title>Portfolio | Davey</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <script defer src="../src/js/main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/main.js" type="module"></script>
 </head>
 
 <body>
   <div class="min-h-screen bg-gray-50">
     <!-- Nav -->
-    <nav class="fixed w-full bg-white/80 backdrop-blur-sm shadow-sm z-50">
-      <div class="container mx-auto px-4">
-        <div class="flex items-center justify-between h-16">
-          <span class="text-xl font-bold text-gray-800">Portfolio</span>
-          <div class="hidden md:flex space-x-8">
-            <a href="#home" class="text-gray-600 hover:text-gray-900 hover:font-bold flex items-center gap-1">
-              <!-- <svg> ? -->
-              Home
-            </a>
-            <a href="#about" class="text-gray-600 hover:text-gray-900 hover:font-semibold flex items-center gap-1">
-              <!-- <svg> ? -->
-              About
-            </a>
-            <a href="#projects" class="text-gray-600 hover:text-gray-900 hover:font-semibold flex items-center gap-1">
-              <!-- <svg> ? -->
-              Projects
-            </a>
-            <a href="#contact" class="text-gray-600 hover:text-gray-900 hover:font-semibold flex items-center gap-1">
-              <!-- <svg> ? -->
-              Contact
-            </a>
+      <nav class="fixed w-full bg-white/80 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-4">
+          <div class="flex items-center justify-between h-16">
+            <span class="text-xl font-bold text-gray-800">Portfolio</span>
+            <div class="hidden md:flex space-x-8">
+              <a href="#home" class="text-gray-600 hover:text-gray-900 hover:font-bold flex items-center gap-1">
+                <!-- <svg> ? -->
+                Home
+              </a>
+              <a href="#about" class="text-gray-600 hover:text-gray-900 hover:font-semibold flex items-center gap-1">
+                <!-- <svg> ? -->
+                About
+              </a>
+              <a href="#projects" class="text-gray-600 hover:text-gray-900 hover:font-semibold flex items-center gap-1">
+                <!-- <svg> ? -->
+                Projects
+              </a>
+              <a href="#contact" class="text-gray-600 hover:text-gray-900 hover:font-semibold flex items-center gap-1">
+                <!-- <svg> ? -->
+                Contact
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
     <!-- Home -->
     <section id="home" class="min-h-screen relative overflow-hidden bg-gradient-to-br from-white to-gray-50">
@@ -55,13 +57,13 @@
               </span>
             </div>
             <h1 class="text-6xl md:text-7xl font-bold">
-              Hi, I'm
+              Hi,I'm
               <span id="animated-text" class="block mt-2 text-primary font-banner text-8xl">
                 Davey
               </span>
             </h1>
             <p class="text-xl text-gray-600 max-w-lg mx-auto md:mx-0">
-              Crafting digital experiences through elegant code and intuitive design
+              Bringing ideas to life with clean code, creative design, and a whole lot of passion.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a href="#contact" class="px-8 py-4 bg-primary text-white rounded-xl hover:bg-primary/90
@@ -92,9 +94,9 @@
             <div class="absolute inset-0 bg-gradient-to-b from-primary/20 to-transparent
                       rounded-full blur-3xl transform -translate-y-1/2">
             </div>
-            <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=600&h=600"
+            <img src="images/Davey.jpg"
               alt="Profile Character" class="relative w-full max-w-lg mx-auto rounded-3xl shadow-2xl transform
-                   hover:-translate-y-2 transition-transform duration-300" />
+                   hover:-translate-y-2 transition-transform duration-300 brightness-90" />
           </div>
         </div>
       </div>
@@ -104,12 +106,15 @@
 
     <section id="about" class="py-20 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-5xl font-banner font-bold text-center mb-16">About Me</h2>
+        <h2 class="text-5xl font-banner font-bold text-center relative mb-12">
+          About Me
+          <span class="block w-16 h-1 bg-primary mx-auto mt-2"></span>
+        </h2>
         <div class="max-w-4xl mx-auto">
           <div class="flex flex-col md:flex-row-reverse gap-32 items-center">
             <!-- Right Content: {code} -->
             <div class="bg-gray-900 p-8 rounded-2xl shadow-2xl font-mono text-sm md:text-base relative overflow-hidden">
-              <!-- Window Controls -->
+              <!-- Dots -->
               <div class="flex items-center gap-2 mb-6">
                 <div class="w-3 h-3 rounded-full bg-red-500"></div>
                 <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -164,8 +169,7 @@
                 </div>
               </div>
             
-              <!-- x Gradient -->
-              <div class="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-gray-900 to-transparent"></div>
+              <!-- Gradient -->
             </div>
             
     
@@ -203,7 +207,10 @@
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-gray-50">
       <div class="container mx-auto px-4">
-        <h2 class="text-5xl font-banner font-bold text-center mb-16">Featured Projects</h2>
+        <h2 class="text-5xl font-banner font-bold text-center mb-16">
+          Featured Projects
+        <span class="block w-32 h-1 bg-primary mx-auto mt-2"></span>
+        </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
 
           <!-- Project 1 -->
@@ -358,6 +365,7 @@
       <div class="container mx-auto px-4">
         <h2 class="text-5xl font-banner font-bold text-center mb-16">
           Let's Connect
+          <span class="block w-28 h-1 bg-primary mx-auto mt-2"></span>
         </h2>
         <div class="max-w-4xl mx-auto">
           <div class="grid md:grid-cols-2 gap-12">
@@ -369,13 +377,13 @@
               <div class="space-y-6">
                 <a href="https://github.com/daveymunters87" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-gray-600 hover:text-primary">
                   <div class="bg-indigo-500/10 p-3 rounded-full">
-                    <!-- <svg ...> [icon] </svg> -->
+                    <i class="fa-brands fa-github"></i>
                   </div>
                   <span>GitHub Profile</span>
                 </a>
                 <a href="https://www.linkedin.com/in/davey-munters-590921236/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-gray-600 hover:text-primary">
                   <div class="bg-indigo-500/10 p-3 rounded-full">
-                    <!-- <svg ...> [icon] </svg> -->
+                    <i class="fa-brands fa-linkedin-in"></i>
                   </div>
                   <span>LinkedIn Profile</span>
                 </a>                
@@ -383,7 +391,7 @@
             </div>
 
             <!-- Contact Form -->
-            <form class="space-y-6" action="/send-email" method="post">
+            <form class="space-y-6" id="contactForm" action="/send-email" method="post">
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
                   Name
@@ -411,6 +419,9 @@
                 <!-- <svg ...> [icon] </svg> -->
               </button>
             </form>
+
+            <div id="errorMessage" class="text-primary"></div>
+
           </div>
         </div>
       </div>
@@ -424,4 +435,30 @@
     </footer>
   </div>
 </body>
+<script>
+  // Check if the URL contains "success=true"
+  if (window.location.search.includes('success=true')) {
+    // Show the SweetAlert
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 5000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+      }
+    });
+
+    Toast.fire({
+      icon: "success",
+      title: "Message sent successfully!"
+    });
+
+    const url = new URL(window.location);
+    url.searchParams.delete('success'); // Remove "success" query parameter
+    window.history.replaceState({}, document.title, url.toString());
+  }
+</script>
 </html>
