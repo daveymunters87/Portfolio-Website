@@ -12,7 +12,7 @@ module.exports = {
       fontFamily: {
         banner: ['Banner', 'serif'],
         poppins: ['Poppins', 'sans-serif'],
-      },
+      }
     },
   },
   plugins: [],
