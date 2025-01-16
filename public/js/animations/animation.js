@@ -1,24 +1,22 @@
 export function loadletters() {
-  const textElement = document.getElementById("animated-text");
-  const textContent = textElement.textContent;
-  textElement.innerHTML = ""; 
-
-  const spans = textContent.split("").map((letter, index) => {
-    const span = document.createElement("span");
-    span.textContent = letter;
-    span.style.opacity = "0"; 
-    span.style.transition = `opacity 0.3s ease ${index * 0.1}s, transform 0.3s ease ${index * 0.1}s`;
-    span.style.display = "inline-block";
-    span.style.transform = "translateY(10px)";
-    return span;
-  });
-
-  spans.forEach((span) => textElement.appendChild(span));
-
-  requestAnimationFrame(() => {
-    spans.forEach((span) => {
-      span.style.opacity = "1";
-      span.style.transform = "translateY(0)";
+  // Wrap every letter in a span
+  var textWrapper = document.querySelector('.ml7 .letters');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  
+  anime.timeline({loop: false})
+    .add({
+      targets: '.ml7 .letter',
+      translateY: ["1.1em", 0],
+      translateX: ["0.55em", 0],
+      translateZ: 0,
+      rotateZ: [180, 0],
+      duration: 1250,
+      easing: "easeOutExpo",
+      delay: (el, i) => 100 * i
+    }).add({
+      targets: '.ml7',
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
     });
-  });
 }

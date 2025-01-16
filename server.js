@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const nodemailer = require('nodemailer');
+const { body, validationResult } = require("express-validator");
 
 // Validate environment variables
 if (!process.env.GMAIL_USER || !process.env.GMAIL_PASS) {

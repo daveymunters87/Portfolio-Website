@@ -1,0 +1,114 @@
+[
+  {
+      "title": "Scrum",
+      "organization": "Bit Academy",
+      "description": "Learn how to apply Scrum practices for effective team collaboration.",
+      "date": "Jan 9, 2025",
+      "certId": "01945fba-acec-71cb-98ce-5f4f39547b12"
+  },
+  {
+      "title": "Object Oriented Programming Intro",
+      "organization": "Bit Academy",
+      "description": "Introduction to the concepts of Object-Oriented Programming.",
+      "date": "Nov 7, 2024",
+      "certId": "01945042-91fc-799f-9780-ee56b5557f2d"
+  },
+  {
+      "title": "Git",
+      "organization": "Bit Academy",
+      "description": "Learning how to work with Git and collaboration techniques to manage code efficiently.",
+      "date": "Sep 20, 2024",
+      "certId": "01945fbb-1f14-7b7a-8234-6901c5e7e0ec"
+  },
+  {
+      "title": "JavaScript Novice",
+      "organization": "Bit Academy",
+      "description": "Getting started with JavaScript for web development.",
+      "date": "Jun 21, 2024",
+      "certId": "01945fbb-2b11-7997-8bf0-975c260c1b67"
+  },
+  {
+      "title": "Database Advanced",
+      "organization": "Bit Academy",
+      "description": "Advanced concepts of database design and management.",
+      "date": "Jun 3, 2024",
+      "certId": "01945fbb-337d-7537-bc07-2f414c6c8438"
+  },
+  {
+      "title": "Fullstack Web Developer",
+      "organization": "Bit Academy",
+      "description": "Mastering full-stack web development tools and techniques.",
+      "date": "Apr 16, 2024",
+      "certId": "01945fbb-4319-78fd-851b-f37d0b0622a6"
+  },
+  {
+      "title": "Database PDO",
+      "organization": "Bit Academy",
+      "description": "Using PDO for secure and efficient database interactions.",
+      "date": "Mar 28, 2024",
+      "certId": "01945fbb-5521-7ec5-a500-0b00bd9a5968"
+  },
+  {
+      "title": "PHP Web",
+      "organization": "Bit Academy",
+      "description": "Building dynamic web applications with PHP.",
+      "date": "Jan 30, 2024",
+      "certId": "018d5a2c-2341-763d-a67a-102f3dc37928"
+  },
+  {
+      "title": "Bootstrap",
+      "organization": "Bit Academy",
+      "description": "Designing responsive web pages with Bootstrap.",
+      "date": "Dec 20, 2023",
+      "certId": "01945fbb-790b-72c2-af93-322eb6107ac7"
+  },
+  {
+      "title": "JavaScript Beginner",
+      "organization": "Bit Academy",
+      "description": "Basic JavaScript programming concepts.",
+      "date": "Nov 28, 2023",
+      "certId": "01945fbb-8daf-75a4-85a4-bbcbb82df8fc"
+  },
+  {
+      "title": "HTML/CSS Advanced",
+      "organization": "Bit Academy",
+      "description": "Advanced HTML and CSS techniques for modern web design.",
+      "date": "Nov 16, 2023",
+      "certId": "01945fbb-a458-7c17-8a9f-21e8dbb6dd8d"
+  },
+  {
+      "title": "MySQL Beginner",
+      "organization": "Bit Academy",
+      "description": "Basics of MySQL for relational database management.",
+      "date": "Oct 20, 2023",
+      "certId": "01945fbb-c618-700d-88bd-f8424413940b"
+  },
+  {
+      "title": "PHP Novice",
+      "organization": "Bit Academy",
+      "description": "Intermediate PHP programming concepts.",
+      "date": "Oct 17, 2023",
+      "certId": "018cf2ce-623c-784b-98b8-8693c13e5ac0"
+  },
+  {
+      "title": "PHP Beginner",
+      "organization": "Bit Academy",
+      "description": "Introduction to PHP programming.",
+      "date": "Sep 28, 2023",
+      "certId": "01945fbb-f1db-7cd5-90c2-4736d04692d0"
+  },
+  {
+      "title": "HTML/CSS Beginner",
+      "organization": "Bit Academy",
+      "description": "Learn the basics of HTML and CSS.",
+      "date": "Sep 27, 2023",
+      "certId": "01945fbb-fa9b-7067-8a0a-8b31c740456f"
+  },
+  {
+      "title": "Command Line",
+      "organization": "Bit Academy",
+      "description": "Learn the basics of command-line usage.",
+      "date": "Sep 18, 2023",
+      "certId": "01945fbc-03b8-7259-99f6-3c6c5d3ba2bc"
+  }
+]
