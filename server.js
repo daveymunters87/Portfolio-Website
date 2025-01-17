@@ -16,22 +16,37 @@ if (!process.env.GMAIL_USER || !process.env.GMAIL_PASS) {
 }
 
 const limiter = rateLimit({
-    windowMs: 15 * 60 * 1000,
-    max: 100,
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 20, // Allow 3 requests per 15 minutes
+    message: 'Too many requests, please try again later.', // Default message
+    handler: (req, res) => {
+        res.status(429).json({
+            success: false,
+            message: 'You have exceeded the maximum number of submissions. Please try again later.',
+        });
+    },
 });
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(limiter);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')))
+
+// Serve static assets without rate limiting
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.use(cors({
     origin: process.env.ALLOWED_ORIGINS?.split(',') || 'http://localhost:3000',
     methods: ['GET', 'POST']
 }));
 app.use(helmet());
+
+// Apply rate limiting only to API or specific routes
+app.use('/api', limiter);
+app.use('/send-email', limiter);
+
 
 // Serve the main HTML page
 app.get('/', (req, res) => {

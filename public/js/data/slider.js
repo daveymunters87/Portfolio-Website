@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     certificates.forEach((certificate) => {
       const slide = `
-        <li class="carousel-slide bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between w-[33.333%] flex-shrink-0">
+        <li class="carousel-slide bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between w-full sm:w-[33.333%] flex-shrink-0">
           <div>
             <h3 class="text-primary font-bold text-lg">${certificate.title}</h3>
             <p class="text-gray-500 text-sm">${certificate.organization}</p>
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function centerInitialCard(totalSlides) {
-    const cardWidth = carousel.offsetWidth / 3;
+    const cardWidth = carousel.offsetWidth / (window.innerWidth < 640 ? 1 : 3); // Adjust for mobile
     const gap = parseInt(getComputedStyle(carousel).gap) || 0;
     const slideWidth = cardWidth + gap;
 
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function slideCarousel(direction, totalSlides) {
-    const cardWidth = carousel.offsetWidth / 3;
+    const cardWidth = carousel.offsetWidth / (window.innerWidth < 640 ? 1 : 3); // Adjust for mobile
     const gap = parseInt(getComputedStyle(carousel).gap) || 0;
     const slideWidth = cardWidth + gap;
     const maxIndex = totalSlides - 1;
